@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>:root{--animation-delay:3250ms;--font-size-base:1rem;--font-size-view-offset:1vw;--font-size-sm:calc(var(--font-size-base)*0.25 + var(--font-size-view-offset));--font-size-md:calc(var(--font-size-base)*0.5 + var(--font-size-view-offset));--font-size-xl:calc(var(--font-size-base)*1 + var(--font-size-view-offset));--font-size-xxl:calc(var(--font-size-base)*2 + var(--font-size-view-offset));--font-size-xxxl:calc(var(--font-size-base)*2.5 + var(--font-size-view-offset));--checkerboard-color1:#181818;--checkerboard-color2:#161616;--text-color:#fff;--link-color:#7e7aff;--roadmap-curve-color:#fff;--scrollbar-background-color:#212121;--scrollbar-color:var(--checkerboard-color1)}body{background-image:conic-gradient(var(--checkerboard-color1) 25%,var(--checkerboard-color2) 25%,var(--checkerboard-color2) 50%,var(--checkerboard-color1) 50%,var(--checkerboard-color1) 75%,var(--checkerboard-color2) 75%,var(--checkerboard-color2) 100%);background-size:64px 64px;height:auto;overflow-x:hidden;position:relative;width:100vw}*{font-family:Tahoma,Helvetica,Arial,sans-serif;font-size:var(--font-size-md);margin:0;padding:0}div,h1,p{color:var(--text-color)}h1{font-size:var(--font-size-xxl)}h2{font-size:var(--font-size-xl)}h3{font-size:var(--font-size-md)}::-webkit-scrollbar{background:var(--scrollbar-background-color);width:20px}::-webkit-scrollbar-thumb{background:var(--scrollbar-color);background-clip:padding-box;border:7px solid transparent;border-radius:20px 0 0 20px;border-right:none}.no-select-text{-webkit-touch-callout:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}@keyframes fade-in{0%{opacity:0}to{opacity:1}}.roadmap-path{fill:none;stroke:var(--roadmap-curve-color);stroke-width:10px;stroke-linecap:round;--length-of-curve:6000px;--start-anim-duration:8750ms;--start-anim-delay:3000ms;stroke-dashoffset:var(--length-of-curve);stroke-dasharray:var(--length-of-curve);animation:start-anim var(--start-anim-duration) ease-in-out var(--start-anim-delay) forwards;height:auto;left:0;opacity:0;position:absolute;top:3rem;width:100vw}.roadmap-path[data-glow]{animation:start-anim var(--start-anim-duration) ease-in-out var(--start-anim-delay) forwards,glow-anim 3.5s ease-in-out 0ms infinite;filter:blur(20px)}@keyframes start-anim{12.5%{opacity:1}to{stroke-dashoffset:0;opacity:1}}@keyframes glow-anim{0%{opacity:1}50%{opacity:.66}to{opacity:1}}.roadmap-wrapper{position:relative;width:100vw}.roadmap-title{animation:fade-in 1s ease-out 2.2s forwards;opacity:0;text-align:center;width:100vw}#roadmap-text-wrapper{aspect-ratio:128/258;width:100vw}.roadmap-text-section{animation:fade-in 1s ease-out forwards;background-color:#0102034f;border-radius:32px;box-shadow:0 0 30px #0102039d;opacity:0;padding:2%;position:absolute}.roadmap-text-section .roadmap-title-wrapper{display:flex;justify-content:space-between}.roadmap-text-section .roadmap-title-wrapper .svg-completion-icon{fill:#fff;animation:fade-in 1s ease-in forwards;height:calc(10px + 2vw);opacity:0}.roadmap-text-section p{animation:roadmap-text-anim-in .66s ease-out forwards;font-size:var(--font-size-sm);opacity:0;rotate:3deg}.roadmap-text-section h2{animation:roadmap-title-anim-in .66s ease-out forwards;font-size:var(--font-size-md);opacity:0}@keyframes roadmap-text-anim-in{0%{opacity:0}25%{opacity:0}to{opacity:1;rotate:0deg}}@keyframes roadmap-title-anim-in{0%{opacity:0}60%{opacity:0}to{margin-left:0;margin-right:0;opacity:1}}.title-wrapper{align-items:center;display:flex;flex-direction:column;justify-content:flex-end;margin-bottom:16px;min-height:15vh}.name{animation:name-fade-in 1s ease-in 1 forwards;font-size:var(--font-size-xxl);line-height:75%}.name-suffix{animation:name-suffix-fade-in 2s ease-in-out 1 forwards;font-size:var(--font-size-xl)}@keyframes name-fade-in{0%,66%{opacity:0;padding-bottom:20px}to{opacity:1;padding-bottom:0}}@keyframes name-suffix-fade-in{0%,60%{margin-left:0;opacity:0}to{margin-left:2.01rem;opacity:1}}@media (max-width:600px){.roadmap-path{filter:blur(10px)}#roadmap-text-wrapper{align-items:center;display:flex;flex-direction:column;justify-content:space-between}.roadmap-text-section{position:static;width:70vw!important}}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap</title>
+  </head>
+  <body>
+    <div class='title-wrapper'>
+      <div class='name-wrapper no-select-text'>
+        <p class='name'>
+          Olly
+        </p>
+        <p class='name-suffix no-select-text'>
+          the dev
+        </p>
+      </div>
+    </div>
+
+    <div class='roadmap-wrapper'>
+      <svg viewBox='0 0 1000 2100' class='roadmap-path'>
+        <path d='M 500 5 C 626.853 612.97 171.31 230.094 142 615 S 668.183 776.367 813.469 919.434 S 898.861 1271.368 798.899 1310.775 S 626.851 1306.931 319.185 1239.371 S 85.665 975.495 230.447 963.819 S 453.848 1063.453 357.326 1213.685 S 111.353 1745.352 415.71 1654.25 S 964 1775 872 1984 C 734 2245 63.609 1739.405 -117 2198'/>
+      </svg>
+      <svg viewBox='0 0 1000 2100' class='roadmap-path' data-glow>
+        <path d='M 500 5 C 626.853 612.97 171.31 230.094 142 615 S 668.183 776.367 813.469 919.434 S 898.861 1271.368 798.899 1310.775 S 626.851 1306.931 319.185 1239.371 S 85.665 975.495 230.447 963.819 S 453.848 1063.453 357.326 1213.685 S 111.353 1745.352 415.71 1654.25 S 964 1775 872 1984 C 734 2245 63.609 1739.405 -117 2198'/>
+      </svg>
+
+      <h2 class='roadmap-title no-select-text'>2023 Roadmap</h2>
+      <div id="roadmap-text-wrapper">
+
+        <div class="roadmap-text-section" style="left:4%;top:5%;width:40%;animation-delay:var(--animation-delay);">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 20px;animation-delay:var(--animation-delay);">Web development</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:var(--animation-delay);">
+              <path d="M 20.285 2 l -11.285 11.567 l -5.286 -5.011 l -3.714 3.716 l 9 8.728 l 15 -15.285 z"/>
+            </svg>
+          </div>
+          <p style="rotate:-3deg;animation-delay:var(--animation-delay);">I embarked on my web development journey using React, a powerful library known for its simplicity and component-based architecture. With React, I crafted interactive and dynamic user interfaces, leveraging its flexibility to handle complex data flows effortlessly. I prefer using Mantine as my go-to component library, but in smaller projects, I rely on PostCSS for lightweight styling solutions.</p>
+        </div>
+
+        
+        <div class="roadmap-text-section" style="left:55%;top:14%;width:30%;animation-delay:calc(var(--animation-delay) + 1150ms);">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 -20px;animation-delay:calc(var(--animation-delay) + 1150ms);">NoSQL databases</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:calc(var(--animation-delay) + 1150ms);">
+              <path d="M 20.285 2 l -11.285 11.567 l -5.286 -5.011 l -3.714 3.716 l 9 8.728 l 15 -15.285 z"/>
+            </svg>
+          </div>
+          <p style="rotate:3deg;animation-delay:calc(var(--animation-delay) + 1150ms);">I delved into NoSQL databases, specifically Firebase, honing my skills in handling non-relational data structures. I integrated Firebase with Node.js and Express, creating RESTful APIs that efficiently managed data. This experience laid the foundation for my expertise in server-side data handling and database design.</p>
+        </div>
+        
+        <div class="roadmap-text-section" style="left:30%;top:30%;width:50%;animation-delay:calc(var(--animation-delay) + 1150ms * 2);">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 20px;animation-delay:calc(var(--animation-delay) + 1150ms * 2);">Software development</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:calc(var(--animation-delay) + 1150ms * 2);">
+              <path d="M 20.285 2 l -11.285 11.567 l -5.286 -5.011 l -3.714 3.716 l 9 8.728 l 15 -15.285 z"/>
+            </svg>
+          </div>
+          <p style="rotate:-3deg;animation-delay:calc(var(--animation-delay) + 1150ms * 2);">My journey in software development began with Electron, enabling me to seamlessly merge my front-end web skills. After experimenting with Electron, I transitioned to Tauri, which led me to learn Rust. Despite my initial challenges, I successfully created a lightweight task tracker with enhanced functionalities. This journey enhanced my problem-solving skills and introduced me to the world of low-level programming.</p>
+        </div>
+        
+        <div class="roadmap-text-section" style="left:45%;top:48%;width:30%;animation-delay:calc(var(--animation-delay) + 1150ms * 3)">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 -20px;animation-delay:calc(var(--animation-delay) + 1150ms * 3)">SQL databases</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:calc(var(--animation-delay) + 1150ms * 3)">
+              <path d="M 20.285 2 l -11.285 11.567 l -5.286 -5.011 l -3.714 3.716 l 9 8.728 l 15 -15.285 z"/>
+            </svg>
+          </div>
+          <p style="rotate:3deg;animation-delay:calc(var(--animation-delay) + 1150ms * 3)">My exploration of back-end development extended to SQL and MySQL databases. I utilized my knowledge to create full-stack applications, mastering the art of handling relational data and designing efficient database structures. This experience deepened my understanding of database management and optimized data retrieval processes.</p>
+        </div>
+
+        <div class="roadmap-text-section" style="left:34%;top:70%;width:50%;animation-delay:calc(var(--animation-delay) + 1150ms * 4)">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 20px;animation-delay:calc(var(--animation-delay) + 1150ms * 4)">Testing frameworks</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:calc(var(--animation-delay) + 1150ms * 4)">
+              <path d="M 0 21 L 3 24 L 12 15 L 21 24 L 24 21 L 15 12 L 24 3 L 21 0 L 12 9 L 3 0 L 0 3 L 9 12 z"/>
+            </svg>
+          </div>
+          <p style="rotate:-3deg;animation-delay:calc(var(--animation-delay) + 1150ms * 4)">Currently, I haven't dived into testing frameworks, but it's a significant milestone on my roadmap. I'm eager to explore and master testing frameworks to ensure the reliability and robustness of my applications. This exciting phase of my journey is just around the corner, and I look forward to incorporating rigorous testing practices into my development process to create bug-free and dependable software solutions. Stay tuned for my progress in this area!</p>
+        </div>
+        
+        <div class="roadmap-text-section" style="left:20%;top:88%;width:50%;animation-delay:calc(var(--animation-delay) + 1150ms * 5)">
+          <div class="roadmap-title-wrapper">
+            <h2 style="margin:0 0 0 -20px;animation-delay:calc(var(--animation-delay) + 1150ms * 5)">The future</h2>
+            <svg role="image" class="svg-completion-icon" viewBox="0 0 24 24" style="animation-delay:calc(var(--animation-delay) + 1150ms * 5)">
+              <path d="M 20.285 2 l -11.285 11.567 l -5.286 -5.011 l -3.714 3.716 l 9 8.728 l 15 -15.285 z"/>
+            </svg>
+          </div>
+          <p style="rotate:3deg;animation-delay:calc(var(--animation-delay) + 1150ms * 5)">As 2024 approaches, I'm committed to mastering Rust and exploring cloud technologies. My goal is to excel in Rust through hands-on practice, deepening my understanding of its syntax and concepts. In parallel, I'm excited to dive into cloud solutions, specifically Amazon Web Services and Azure. Additionally, I'll venture into serverless computing with AWS Lambda and Azure Functions, streamlining cloud-based app development and elevating my skill set as a developer.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  </html>
